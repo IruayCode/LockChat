@@ -1,0 +1,22 @@
+name: LockChat
+version: 1.0.0
+main: LockChat\Main
+api: 5.0.0
+commands:
+  lockchat:
+    description: "Verrouille le chat"
+    permission: "lockchat.command.lock"
+    permission-message: "Vous n'avez pas la permission d'utiliser cette commande."
+  unlockchat:
+    description: "Déverrouille le chat"
+    permission: "lockchat.command.unlock"
+    permission-message: "Vous n'avez pas la permission d'utiliser cette commande."
+permissions:
+  lockchat.command.lock:
+    description: "Permission to lock the chat"
+    default: op
+  lockchat.command.unlock:
+    description: "Permission to unlock the chat"
+    default: op
+
+
